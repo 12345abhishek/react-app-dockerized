@@ -32,7 +32,7 @@ Node.js applications are designed to maximize throughput and efficiency, using n
 
 Node.js internally uses the Google V8 JavaScript engine to execute code; a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in, asynchronous I/O library for file, socket, and HTTP communication. The HTTP and socket support allows Node.js to act as a web server without additional software such as Apache.
 
-#### node:<version>-alpine
+#### node:version-alpine
 
 This image is based on the popular Alpine Linux project, available in the alpine official image. Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
