@@ -7,7 +7,7 @@ I followed this tutorial: <https://mherman.org/blog/dockerizing-a-react-app/>
 I am serving a live React app from a local docker container.
 
 Complete the tutorial and run:
-`$ docker container ls`
+`docker container ls`
 
 ```
 CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS              PORTS                  NAMES
@@ -16,9 +16,21 @@ CONTAINER ID        IMAGE                COMMAND                  CREATED       
 
 I have no local servers running in a terminal window, but the `docker` container I created is running behind the scenes on my computer, so I can still visit <http://localhost:1337/> and see the live app!
 
-## Success!
+Run `docker container stop sample-prod` to kill the container.
 
-## Docker image
+## What I learned about infrastructure & DevOps
+
+I attempted to create a build toolchain from scratch this week in a scrum sprint for fun. I was able to build and deploy a [React app with yarn and parcel](https://github.com/hashbangash/dojo).
+
+I wanted to learn about containerization and Docker is the most-loved open-source containerization software.
+
+> Docker solves the infamous “it works on my machine” problem. Containers run the same wherever you start them!
+
+Source: [Dockerizing Modern Web Apps](https://makeitnew.io/dockerizing-modern-web-apps-32ecdb24bc2e)
+
+I want to wrap my dojo app inside a Docker image and run it as a container.
+
+## About the Docker image
 
 The Docker image I use is `node:13.12.0-alpine`.
 
